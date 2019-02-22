@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true">
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %msg %class.%method\(%file:%line\)%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.hibernate" additivity="false" level="INFO" />
+    <logger name="org.hibernate.SQL" additivity="false" level="DEBUG" />
+    <!--<logger name="org.hibernate.type" additivity="false" level="TRACE" />-->
+    <!--<logger name="org.hibernate.hql.ast" additivity="false" level="INFO" />-->
+    <!--<logger name="org.hibernate.tool.hbm2ddl" additivity="false" level="WARN" />-->
+    <!--<logger name="org.hibernate.hql" additivity="false" level="DEBUG" />-->
+    <!--<logger name="org.hibernate.cache" additivity="false" level="INFO" />-->
+    <!--<logger name="org.hibernate.jdbc" additivity="false" level="DEBUG" />-->
+    <!--<logger name="org.hibernate.stat" additivity="false" level="DEBUG" />-->
+
+    <!--<logger name="com.p6spy" additivity="false" level="DEBUG" />-->
+    
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>
